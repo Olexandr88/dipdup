@@ -46,11 +46,6 @@ class TezosHeadIndexConfig(TezosIndexConfig):
     callback: str
 
     @property
-    def handler_config(self) -> TezosTzktHeadHandlerConfig:
-        self.parent = self
-        return self
-
-    @property
     def first_level(self) -> int:
         return 0
 
